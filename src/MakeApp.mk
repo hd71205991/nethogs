@@ -5,7 +5,7 @@ all: nethogs decpcap_test
 # nethogs_testsum
 
 CFLAGS?=-Wall -Wextra
-CXXFLAGS?=-Wall -Wextra -Wno-missing-field-initializers
+CXXFLAGS?=-std=c++11 -Wall -Wextra -Wno-missing-field-initializers
 
 OBJS=packet.o connection.o process.o decpcap.o cui.o inode2prog.o conninode.o devices.o
 
